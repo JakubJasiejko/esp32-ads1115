@@ -1,21 +1,21 @@
 # esp32-ads1115
 
-Prosty sterownik `ADS1115` dla ESP32 przez I2C. Nadaje się do szybkiego startu z pomiarem single-ended i differential.
+Simple `ADS1115` driver for ESP32 over I2C. It is a good fit for quick single-ended and differential measurement prototypes.
 
-## Co zawiera
-- zapis konfiguracji pomiaru
-- odczyt surowej próbki
-- konwersję na miliwolty
+## Features
+- write measurement configuration
+- read raw samples
+- convert samples to millivolts
 
-## Zależności
+## Dependencies
 - `esp32-i2c-tools`
-- opcjonalnie `esp32-uart-xor` dla debugowania
+- optional `esp32-uart-xor` for debug output
 
-## Pliki
+## Files
 - `include/ads1115.h`
 - `src/ads1115.c`
 
-## Szybki start
+## Quick start
 ```c
 #include "ads1115.h"
 
@@ -28,4 +28,4 @@ void app_main(void)
 }
 ```
 
-Pełny przykład znajdziesz w `examples/basic_usage/basic_usage.c`.
+See `examples/basic_usage/basic_usage.c` for a complete example.
